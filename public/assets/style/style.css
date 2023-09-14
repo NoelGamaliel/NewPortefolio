@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Prompt:wght@500&family=Roboto:wght@700&family=Sora:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.0em;
+}
+
+html {
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    --tw-bg-opacity: 1;
+    background-color: rgb(237 239 239/var(--tw-bg-opacity));
+    height: 120vh;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* LOGO */
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: #000;
+    text-transform: uppercase;
+}
+
+.nav_bar {
+    position: fixed;
+    display: flex;
+    height: 90px;
+    background: #ffffff;
+    box-shadow:  0px -1px 0px #fff9f9;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.nav_bar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_links li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.nav_links li a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    transition: 0.6s ease-in-out;
+}
+
+.nav_links li a:hover {
+    padding: 10px 0;
+    border: 2px;
+    border-bottom: 2px solid #18ab63;
+    font-weight: bold;
+    color: rgb(24, 171, 99);
+}
+
+/* btn-appointement */
+.btn-appointement a {
+    text-decoration: none;
+    color:#fff;
+    background-color: #18ab63;
+    border: 1px solid #18ab63;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 12px 50px;
+    transition: 0.9s ease-in-out;
+}
+
+.btn-appointement a:hover {
+    width: 200px;
+    text-decoration: none;
+    color: #18ab63;
+    background-color: #ffffff;
+    border: 1px solid #18ab63;
+    padding: 12px 50px;
+    font-weight: bold;
+}
+/***** btn-toggle ****/
+
+
+
+
+/***** banner-hero ****/
+.banner-hero {
+    height: 75vh;
+    background-image:linear-gradient(rgba(2, 62, 26, 0.557), rgb(0, 0, 0)), url("/public/assets/img/laptop-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.banner-hero .presentation p {
+    padding: 40px 0;
+    font-size: 120px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.banner-hero .presentation .presentation-fonction {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 50px;
+}
+
+.presentation .contact {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.presentation .contact a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #a2d4bc;
+    background-color: #18ab63;
+    font-weight: bold;
+    padding: 12px 50px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+/* mycompetences */
+.mycompetences {
+    height: 40vh;
+    margin-bottom: 120px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(242, 224, 224, 0.546);
+}
+
+.mycompetences .container h1 {
+    padding: 15px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    position: relative;
+}
+.mycompetences .container .barre::after {
+    content: '';
+    left: 3%;
+    top: calc(49% + 1.5rem);
+    height: 8px;
+    width: 70px;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: #18ab63;
+}
+.card-items h2 {
+    padding: 20px 0;
+    font-size: 1.2rem;
+}
+
+.container .card-comptences {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.card-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-items label {
+    margin-bottom: 5px;
+}
+
+progress {
+    margin-bottom: 2px;
+    width: auto;
+    height: 1.2em;
+    border: 1px solid #ffffff;
+    border-radius: 20px 20px;
+}
+
+/* myrealisation */
+.myrealisation {
+    background: #ffffff;
+}
+.myrealisation .container h1 {
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+.myrealisation .container .barre::after {
+    content: ' ';
+    left: 3%;
+    top: calc(55% + 1.5rem);
+    height: 8px;
+    width: 70px;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: #18ab63;
+}
+
+.card-content-realisations  {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* myExpertise */
+.myexpertises .container h1 {
+    padding: 15px 0;
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.myexpertises .container .barre::after {
+    content: ' ';
+    left: 3%;
+    top: calc(48% + 1.5rem);
+    height: 8px;
+    width: 70px;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: #18ab63;
+}
+.myexpertises .container .card-expertises {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 15px 0;
+}
+.card-expertises .card-content-expertise-details img {
+    width: 100px;
+    margin: auto;
+    width: 100% ;
+}
+
+/* mycontact */
+.mycontact {
+    background: #fff;
+    height: 85vh;
+}
+.mycontact .container h1 {
+    padding: 15px 0;
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+.mycontact .container p {
+    padding: 18px 0;
+}
+.mycontact .container .barre::after {
+    content: ' ';
+    left: 3%;
+    top: calc(48% + 1.5rem);
+    height: 8px;
+    width: 70px;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: #18ab63;
+}
+.card-contact-items {
+    padding: 20px 19px;
+    box-shadow: -4px 3px 10px -6px rgba(0,0,0,0.1);
+}
+.card-contact-items form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.card-contact-items form label {
+    padding: 8px 0;
+}
+.card-contact-items form input[type=text], [type=email] {
+    padding: 8px 8px;
+    border: 1px solid #d1d1d163;
+    border-bottom: 2px solid #18ab63;
+    outline-color: #04aa6d9e;
+}
+.card-contact-items form textarea {
+    padding: 8px 8px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d1d163;
+    outline-color: #04aa6d9e;
+    border-bottom: 2px solid #18ab63;
+}
+.card-contact-items form button {
+    padding: 15px 10px;
+    background-color: #18ab63;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px 5px;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
+.card-contact-items form button:hover {
+    padding: 15px 10px;
+    background-color: #04aa6d9e;
+    border-radius: 5px 5px;
+    font-weight: bold;
+}
+
+/*  myfooter */
+.myfooter {
+    --tw-bg-opacity: 1;
+    background-color: rgb(237 239 239/var(--tw-bg-opacity));
+}
+.myfooter .container p {
+    display: flex;
+    padding: 25px 0;
+    justify-content: center;
+    align-items: center;
+}
+.myfooter .container .link-media {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+} 
+.link-media a {
+    border-radius: 50%;
+    color: #000;
+}
+.link-media i {
+    font-size: 1.2em;
+}
