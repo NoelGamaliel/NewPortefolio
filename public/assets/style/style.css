@@ -41,7 +41,6 @@ body {
     box-shadow:  0px -1px 0px #fff9f9;
     width: 100%;
     z-index: 1;
-
 }
 
 .nav_bar .container {
@@ -81,7 +80,8 @@ body {
     cursor: pointer;
     border-radius: 30px;
     padding: 12px 50px;
-    transition: 0.9s ease-in-out;
+    transition: 2s ease-in-out;
+    transition-duration: 2s ;
 }
 
 .btn-appointement a:hover {
@@ -92,11 +92,14 @@ body {
     border: 1px solid #18ab63;
     padding: 12px 50px;
     font-weight: bold;
+    transform: translateY(.2em);
 }
 /***** btn-toggle ****/
-
-
-
+.container .btn-toogle {
+    color: #18ab63;
+    font-size: 1.4rem;
+    visibility: hidden;
+}
 
 /***** banner-hero ****/
 .banner-hero {
@@ -253,16 +256,31 @@ progress {
     gap: 2rem;
     padding: 15px 0;
 }
-.card-expertises .card-content-expertise-details img {
-    width: 100px;
-    margin: auto;
-    width: 100% ;
+.myexpertises .container .card-content-expertise-details {
+    border: 1px solid #d9d4d4;
+    margin-bottom: 20px;
+    transition: 2s ease-in-out;
+    transition-duration: 2s ;
+
+}
+.myexpertises .container .card-content-expertise-details:hover {
+    margin-bottom: 20px;
+    box-shadow: 1px 4px 8px -0px rgba(0,0,0,.15);
+    transform: translateY(2em);
+}
+
+.myexpertises .container .card-content-expertise-details h3 {
+    padding: 20px 10px;
+    background-color: #fff;
+}
+.myexpertises .container .card-content-expertise-details p {
+    padding: 20px 10px;
 }
 
 /* mycontact */
 .mycontact {
     background: #fff;
-    height: 85vh;
+    height: 90vh;
 }
 .mycontact .container h1 {
     padding: 15px 0;
@@ -287,7 +305,7 @@ progress {
 }
 .card-contact-items {
     padding: 20px 19px;
-    box-shadow: -4px 3px 10px -6px rgba(0,0,0,0.1);
+    box-shadow: 1px 4px 8px -0px rgba(0,0,0,.15);
 }
 .card-contact-items form {
     display: flex;
@@ -316,13 +334,15 @@ progress {
     border: 1px solid #bcbcbc;
     border-radius: 5px 5px;
     font-weight: bold;
-    transition: 1s ease-in-out;
+    transition: 2s ease-in-out;
+    transition-duration: 2s ;
 }
 .card-contact-items form button:hover {
     padding: 15px 10px;
     background-color: #04aa6d9e;
     border-radius: 5px 5px;
     font-weight: bold;
+    transform: translateY(.2em);
 }
 
 /*  myfooter */
