@@ -92,6 +92,10 @@
         padding: 15px 0;
     }
     /* mycontact */
+    .mycontact {
+        background: #fff;
+        height: 95vh;
+    }
     .mycontact .container .barre::after {
         content: ' ';
         left: 10%;

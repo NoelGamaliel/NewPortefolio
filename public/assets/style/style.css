@@ -7,6 +7,16 @@
     padding: 0;
     font-size: 1.0em;
 }
+/* This only changes this particular animation duration */
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+}
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}
 
 html {
     --scroll-behavior: smooth;
@@ -141,6 +151,17 @@ body {
     padding: 12px 50px;
     cursor: pointer;
     border-radius: 30px;
+    transition: 2s ease-in-out;
+    transition-duration: 2s ;
+}
+
+.presentation .contact a:hover {
+    width: 200px;
+    text-decoration: none;
+    background-color: #000;
+    padding: 12px 50px;
+    font-weight: bold;
+    transform: translateY(.2em);
 }
 
 /* mycompetences */
