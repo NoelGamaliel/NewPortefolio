@@ -7,6 +7,7 @@
     padding: 0;
     font-size: 1.0em;
 }
+
 /* This only changes this particular animation duration */
 .animate__animated.animate__bounce {
     --animate-duration: 2s;
@@ -30,7 +31,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -278,25 +279,31 @@ progress {
     padding: 15px 0;
 }
 .myexpertises .container .card-content-expertise-details {
-    border: 1px solid #d9d4d4;
+    border: 1px solid #dadada;
     margin-bottom: 20px;
     transition: 2s ease-in-out;
     transition-duration: 2s ;
 
 }
+.card-content-expertise-img {
+    background-color: #fff;
+}
+
+.myexpertises .container .card-content-expertise-details img {
+    width: 90px;
+    padding: 15px 10px;
+}
+
 .myexpertises .container .card-content-expertise-details:hover {
     margin-bottom: 20px;
     box-shadow: 1px 4px 8px -0px rgba(0,0,0,.15);
     transform: translateY(2em);
 }
 
-.myexpertises .container .card-content-expertise-details h3 {
-    padding: 20px 10px;
-    background-color: #fff;
+.myexpertises .container .card-content-expertise-details h3, p {
+    padding: 15px 10px;
 }
-.myexpertises .container .card-content-expertise-details p {
-    padding: 20px 10px;
-}
+
 
 /* mycontact */
 .mycontact {
@@ -385,9 +392,12 @@ progress {
     gap: 1em;
 } 
 .link-media a {
-    border-radius: 50%;
-    color: #000;
+
+    color: #18ab63;
 }
 .link-media i {
-    font-size: 1.2em;
+    font-size: 1em;
+    border-radius: 10px 10px;
+    border: 1px solid #e4e4e4;
+    padding: 10px 10px;
 }
