@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Sora', sans-serif;
+    scroll-padding-top: 75px;
     margin: 0;
     padding: 0;
     font-size: 1.0em;
@@ -106,7 +107,7 @@ body {
     transform: translateY(.2em);
 }
 /***** btn-toggle ****/
-.container .btn-toogle {
+.container #btn-toggle {
     color: #18ab63;
     font-size: 1.4rem;
     visibility: hidden;

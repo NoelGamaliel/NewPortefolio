@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="/animate.css/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" crossorigin="anonymous"></script>
 
     
     <title>MyPortefolio</title>
@@ -28,7 +29,7 @@
                         NDiamona
                     </a>
                     <!-- LINK FOR NAVBAR -->
-                    <ul class="nav_links">
+                    <ul class="nav_links" id="hiddenNavLinks">
                         <!-- Link items -->
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="#section_mycompetences">Competences</a></li>
@@ -41,7 +42,7 @@
                         <a href="#">Appointement</a>
                     </div>
                     <div>
-                        <i class="fa-solid fa-bars btn-toogle"></i>
+                        <i class="fa-solid fa-bars" id="btn-toggle"></i>
                     </div>
                 </div>
             </nav>
@@ -116,7 +117,6 @@
             </div>
         </section>
         <br><br>
-
 
         <!-- myRealisations -->
         <section class="myrealisation" id="section_myrealisations">
@@ -294,6 +294,12 @@
     </main>
     
 
-    <script src="./public/assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btn-toggle').click(function () {
+               $('ul').toggleClass('show');
+            });
+        });
+    </script>
 </body>
 </html>

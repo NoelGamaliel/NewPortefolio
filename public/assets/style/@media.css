@@ -9,33 +9,42 @@
         line-height: 100px;
         text-transform: capitalize;
     }
-    .nav_links {
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 32vh;
+        background: #2f3640;
+        top: 90px;
+        left: -100%;
+        text-align: center;
         display: flex;
         flex-direction: column;
-        background-color: #ff0000;
-        position: absolute;
-        bottom: 250px;
+        transition: all .5s;
     }
-    .nav_links li {
-        margin: 0 40px;
-    }
-
-    .btn-appointement {
-        display: none;
+    nav li {
+        display: block;
+        margin: 15px 0;
+        line-height: 20px;
     }
     .nav_links li a {
         padding: 10px 0;
         border: 2px;
         font-weight: bold;
         color: #ffffff;
+    }  
+    nav ul.show {
+        left: 0;
     }
-    .container .btn-toogle {
+    .btn-appointement {
+        display: none;
+    }
+    .container #btn-toggle {
         color: #18ab63;
         font-size: 1.5rem;
-        visibility: visible;
         line-height: 90px;
+        visibility: visible;
     }
-    
+
     /* my competences */
     .mycompetences {
         height: 75vh;
@@ -117,30 +126,25 @@
         text-transform: uppercase;
         line-height: 90px;
     }
-
-    .nav_links {
-        background-color: #74ffbc;
-        height: 40vh;
+    nav ul {
+        position: fixed;
         width: 100%;
+        height: 35vh;
+        background: #2f3640;
         top: 90px;
-        left: 0;
-        position: absolute;
+        left: -100%;
+        text-align: center;
         display: flex;
         flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        row-gap: 20px;
-        display: none;
+        transition: all .5s;
     }
-    .nav_links li {
-        margin: 0 65px;
+    nav li {
+        display: block;
+        margin: 15px 0;
+        line-height: 20px;
     }
-    .nav_bar {
-        display: flex;
-        height: 100px;
-        background: #ffffff;
-        box-shadow: 24px 24px 54px #fff9f9,
-            -24px -24px 64px #ffffff;
+    nav ul.show {
+        left: 0;
     }
     .nav_links li a {
         padding: 10px 0;
@@ -148,7 +152,7 @@
         font-weight: bold;
         color: #ffffff;
     }
-    .container .btn-toogle {
+    .container #btn-toggle {
         color: #18ab63;
         font-size: 1.5rem;
         visibility: visible;
